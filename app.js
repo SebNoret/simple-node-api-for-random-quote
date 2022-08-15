@@ -12,6 +12,7 @@ app.use((req, res, next) => {
     next();
 });
 
+//returns a random quote from data.json
 app.get("/random", (req, res, next) => {
 
     // generate a random number to select a random quote
@@ -27,4 +28,13 @@ app.get("/random", (req, res, next) => {
     })
 })
 
+
+//handles 404 error for unavailable route
+app.use(function (req, res, next) {
+    res.status(404).send({
+        status_code: 404,
+        error: "not route matches with your request",
+        info: "only route available: /baseUrl/random/"
+    });
+});
 module.exports = app
