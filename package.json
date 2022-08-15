@@ -1,0 +1,22 @@
+{
+  "name": "simple-node-api-for-random-quote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebNoret/simple-node-api-for-random-quote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebNoret/simple-node-api-for-random-quote/issues"
+  },
+  "homepage": "https://github.com/SebNoret/simple-node-api-for-random-quote#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
